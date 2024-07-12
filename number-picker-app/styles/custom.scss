@@ -1,0 +1,111 @@
+// custom.scss
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+$primary: #8400ff; // Change primary color to your desired color
+$font-family-base: "Lexend", sans-serif;
+
+:root {
+  --colour1: #b6c6de;
+  --colour2: #ffffff;
+  --text-color: #000000;
+  --primary-color: $primary;
+}
+
+[data-theme="dark"] {
+  --colour1: #252729;
+  --colour2: #1c1c1c;
+  --text-color: white;
+  --primary-color: $primary;
+}
+
+// .btn-primary {
+//   background-color: var(--primary-color);
+//   border-color: var(--primary-color);
+// }
+
+// Import Bootstrap's SCSS files
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  /* background-color: var(--colour1); */
+  background: linear-gradient(90deg, var(--colour1) 0%, var(--colour2) 100%);
+  color: var(--text-color);
+}
+
+nav i {
+  color: var(--text-color);
+}
+
+.form-text {
+    color: var(--text-color);
+    opacity: 0.5;
+}
+
+.theBox {
+  padding: 20px;
+  background-color: var(--colour2);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+
+}
+
+.result {
+    background-color: var(--colour2);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom:10px;
+    max-width:400px;
+}
+
+.number-box {
+  border-radius: 50%;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 65px;
+  margin: 10px;
+  background: black;
+  display: inline-block;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  border: 0;
+}
+.grey {
+  background: radial-gradient(
+    circle at 100px 100px,
+    rgb(169, 169, 169),
+    #313131
+  );
+}
+.bonus:after {
+  content: "Bonus";
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 13px;
+  line-height: normal;
+}
+.bonus {
+  background: radial-gradient(circle at 100px 100px, rgb(255, 0, 0), #eaff00);
+}
+.blue {
+  background: radial-gradient(circle at 100px 100px, rgb(0, 76, 255), #313131);
+}
+.pink {
+  background: radial-gradient(circle at 100px 100px, rgb(255, 0, 144), #313131);
+}
+.green {
+  background: radial-gradient(circle at 100px 100px, green, #313131);
+}
+.yellow {
+  background: radial-gradient(circle at 100px 100px, rgb(255, 255, 0), #313131);
+}
